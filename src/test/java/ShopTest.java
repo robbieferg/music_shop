@@ -49,6 +49,15 @@ public class ShopTest {
         assertEquals(true, shop.getStock().contains(guitarString));
         assertEquals(false, shop.getStock().contains(guitar));
     }
+
+    @Test
+    public void canGetTotalPotentialProfit() {
+        shop.add(guitar);
+        shop.add(trumpet);
+        shop.add(guitarString);
+        shop.add(sheetMusic);
+        assertEquals(140.55, shop.getTotalPotentialProfit(), 0.0);
+    }
 }
 
 
