@@ -1,4 +1,4 @@
-public class SheetMusic {
+public class SheetMusic implements ISell {
     private double buyingPrice;
     private double sellingPrice;
 
